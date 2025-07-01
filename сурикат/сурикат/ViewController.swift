@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
-
-    @IBAction func buttonTapped(_ sender: UIButton) {
-        label.text = "Button"
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var skyButton: UIButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imageView.image = UIImage(systemName: "moon")
+        skyButton.tintColor = .green
     }
 }
